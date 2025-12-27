@@ -50,7 +50,7 @@ function AnalysisDashboard({ file, analysis, processing, allFiles }) {
           </div>
         </div>
         <div className="header-credit">
-          <span className="credit-text">Mjolnir14 🌗</span>
+          <span className="credit-text">Mjolnir 🌗</span>
         </div>
       </div>
 
