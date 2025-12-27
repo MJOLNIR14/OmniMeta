@@ -1,0 +1,167 @@
+.entropy-graph-tab {
+  max-width: 1200px;
+}
+
+.entropy-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl);
+  gap: var(--space-md);
+}
+
+.entropy-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.stat-card {
+  background: var(--midnight-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: var(--space-md);
+  text-align: center;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--action-blue);
+}
+
+.entropy-graph-container,
+.entropy-regions,
+.entropy-insights {
+  background: var(--midnight-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.entropy-graph-container h3,
+.entropy-regions h3,
+.entropy-insights h3 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.entropy-graph {
+  background: var(--midnight-base);
+  border-radius: 8px;
+  padding: var(--space-lg);
+  margin: var(--space-md) 0;
+  overflow-x: auto;
+}
+
+.graph-svg {
+  width: 100%;
+  height: 200px;
+  min-width: 600px;
+}
+
+.entropy-legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.regions-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.region-item {
+  padding: var(--space-md);
+  border-radius: 8px;
+  border-left: 4px solid;
+}
+
+.region-item.region-low {
+  background: rgba(35, 134, 54, 0.1);
+  border-color: #238636;
+}
+
+.region-item.region-medium {
+  background: rgba(88, 166, 255, 0.1);
+  border-color: #58A6FF;
+}
+
+.region-item.region-high {
+  background: rgba(210, 153, 34, 0.1);
+  border-color: #D29922;
+}
+
+.region-item.region-very-high {
+  background: rgba(248, 81, 73, 0.1);
+  border-color: #F85149;
+}
+
+.region-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-xs);
+}
+
+.region-type {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--text-primary);
+}
+
+.region-range {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+.region-entropy {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.insight-item {
+  padding: var(--space-md);
+  margin-bottom: var(--space-sm);
+  background: var(--midnight-base);
+  border-left: 3px solid var(--action-blue);
+  border-radius: 4px;
+  font-size: 0.9rem;
+}

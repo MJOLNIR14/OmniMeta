@@ -1,0 +1,171 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  background: var(--midnight-base);
+  border-right: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  animation: slideIn var(--transition-slow);
+  z-index: 100;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-lg);
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+}
+
+.sidebar-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: 0.3px;
+}
+
+.mini-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--midnight-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  color: var(--action-blue);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.mini-upload:hover {
+  background: var(--action-blue);
+  color: var(--midnight-deep);
+  border-color: var(--action-blue);
+}
+
+.file-inventory {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-sm);
+}
+
+.inventory-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  width: 100%;
+  padding: var(--space-md);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  margin-bottom: var(--space-sm);
+  text-align: left;
+  color: var(--text-primary);
+}
+
+.inventory-item:hover {
+  background: var(--midnight-elevated);
+  border-color: var(--border-subtle);
+}
+
+.inventory-item.selected {
+  background: rgba(88, 166, 255, 0.1);
+  border-color: var(--action-blue);
+}
+
+.item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--midnight-elevated);
+  border-radius: 6px;
+  color: var(--action-blue);
+  flex-shrink: 0;
+}
+
+.inventory-item.selected .item-icon {
+  background: var(--action-blue);
+  color: var(--midnight-deep);
+}
+
+.item-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.item-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 2px;
+}
+
+.item-meta {
+  font-size: 0.75rem;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+}
+
+.inventory-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  width: 100%;
+  padding: var(--space-md);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  margin-bottom: var(--space-sm);
+  text-align: left;
+  color: var(--text-primary);
+  position: relative;
+}
+
+.remove-file-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background: var(--danger-red);
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  margin-left: auto;
+}
+
+.inventory-item:hover .remove-file-btn {
+  display: flex;
+}
+
+.remove-file-btn:hover {
+  background: #dc2626;
+  transform: scale(1.1);
+}

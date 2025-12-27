@@ -1,0 +1,222 @@
+.report-tab {
+  max-width: 1200px;
+}
+
+.report-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-xl);
+  background: linear-gradient(135deg, rgba(88, 166, 255, 0.1), rgba(163, 113, 247, 0.1));
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  margin-bottom: var(--space-lg);
+}
+
+.report-banner svg {
+  color: var(--action-blue);
+  flex-shrink: 0;
+}
+
+.report-banner h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.report-banner p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.report-section {
+  background: var(--midnight-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.report-section h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.report-formats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+}
+
+.format-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-xl);
+  background: var(--midnight-base);
+  border: 2px solid var(--border-subtle);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  color: var(--text-primary);
+}
+
+.format-card:hover:not(:disabled) {
+  border-color: var(--format-color);
+  background: rgba(255, 255, 255, 0.02);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.format-card:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.format-card svg {
+  color: var(--format-color);
+  margin-bottom: var(--space-md);
+}
+
+.format-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: var(--space-sm);
+}
+
+.format-card p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-md);
+  line-height: 1.5;
+}
+
+.format-action {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--format-color);
+  color: var(--midnight-deep);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+
+.export-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.export-button {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--midnight-base);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  color: var(--text-primary);
+  text-align: left;
+}
+
+.export-button:hover {
+  border-color: var(--action-blue);
+  background: rgba(88, 166, 255, 0.05);
+}
+
+.export-button svg {
+  color: var(--action-blue);
+  flex-shrink: 0;
+}
+
+.export-button strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.export-button p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.report-contents {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+}
+
+.content-category {
+  padding: var(--space-md);
+  background: var(--midnight-base);
+  border-radius: 8px;
+}
+
+.content-category h4 {
+  font-size: 0.95rem;
+  margin-bottom: var(--space-md);
+  color: var(--forensic-green);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.content-category ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.content-category li {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  padding: var(--space-xs) 0;
+  padding-left: var(--space-md);
+  position: relative;
+}
+
+.content-category li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--action-blue);
+}
+
+.report-metadata {
+  background: var(--midnight-base);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: var(--space-lg);
+}
+
+.metadata-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-md);
+}
+
+.metadata-item {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-sm) 0;
+}
+
+.metadata-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.metadata-value {
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-weight: 500;
+}

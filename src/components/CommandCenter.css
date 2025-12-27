@@ -1,0 +1,122 @@
+.command-center {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-xl);
+  animation: fadeIn var(--transition-slow);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.command-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: var(--space-xl);
+  backdrop-filter: blur(20px);
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.branding {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.logo-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--action-blue) 0%, #1F6FEB 100%);
+  border-radius: 20px;
+  margin-bottom: var(--space-md);
+  box-shadow: 0 8px 24px rgba(88, 166, 255, 0.3);
+}
+
+.logo-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--action-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: var(--space-xs);
+}
+
+.tagline {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.ingest-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-xl);
+  border: 2px dashed var(--border-emphasis);
+  border-radius: 12px;
+  background: var(--midnight-elevated);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  margin-bottom: var(--space-lg);
+}
+
+.ingest-zone:hover {
+  border-color: var(--action-blue);
+  background: rgba(88, 166, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.ingest-icon {
+  color: var(--action-blue);
+  opacity: 0.8;
+}
+
+.ingest-text {
+  text-align: center;
+}
+
+.ingest-primary {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.ingest-secondary {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.command-footer {
+  text-align: center;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.footer-text {
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+  font-weight: 500;
+}
+
+.credit-badge {
+  font-size: 0.8rem;
+  color: var(--action-blue);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}

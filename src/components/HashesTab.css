@@ -1,0 +1,81 @@
+.hashes-tab {
+  max-width: 1000px;
+}
+
+.hash-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.hash-header h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.hash-meta {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.hash-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.hash-item {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  gap: var(--space-md);
+  align-items: center;
+  padding: var(--space-md);
+  background: var(--midnight-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  transition: all var(--transition-fast);
+}
+
+.hash-item:hover {
+  border-color: var(--border-emphasis);
+}
+
+.hash-algo {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  border-left: 3px solid;
+  padding-left: var(--space-sm);
+}
+
+.hash-value {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  word-break: break-all;
+  line-height: 1.6;
+}
+
+.hash-copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--midnight-base);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  color: var(--action-blue);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.hash-copy:hover {
+  background: var(--action-blue);
+  color: var(--midnight-deep);
+  border-color: var(--action-blue);
+}
