@@ -2,6 +2,17 @@
 
 **A comprehensive forensic analysis platform for digital evidence examination.**
 
+[![Live Demo](https://img.shields.io/badge/demo-live-green?style=for-the-badge)](https://omni01101101.netlify.app/)
+![GitHub License](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
+
+---
+
+### 🌐 [Visit the Live App here](https://omni01101101.netlify.app/)
+
+---
+
+![OmniMeta Banner](image.png)
+
 ## ✨ Features
 
 * 🔐 **5 Cryptographic Hashes** (MD5, SHA-1/256/384/512)
