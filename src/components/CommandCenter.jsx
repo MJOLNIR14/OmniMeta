@@ -47,7 +47,7 @@ function CommandCenter({ onFileSelect }) {
 
         <div className="command-footer">
           <span className="footer-text">Professional Digital Forensics</span>
-          <span className="credit-badge">Built by Mjolnir</span>
+          <span className="credit-badge">Built by Mjölnir</span>
         </div>
       </div>
     </div>

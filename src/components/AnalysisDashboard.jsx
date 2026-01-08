@@ -15,9 +15,12 @@ import QRCodeTab from './QRCodeTab';
 import FileCarverTab from './FileCarverTab'; 
 import DuplicateFinderTab from './DuplicateFinderTab'; 
 
-
 function AnalysisDashboard({ file, analysis, processing, allFiles }) { 
   const [activeTab, setActiveTab] = useState('overview');
+
+  const handleGithubClick = () => {
+    window.open('https://github.com/MJOLNIR14', '_blank', 'noopener,noreferrer');
+  };
 
   if (!file) {
     return (
@@ -49,8 +52,16 @@ function AnalysisDashboard({ file, analysis, processing, allFiles }) {
             {(file.size / 1024 / 1024).toFixed(2)} MB • {file.type || 'Unknown type'}
           </div>
         </div>
-        <div className="header-credit">
-          <span className="credit-text">Mjolnir 🌗</span>
+        <div 
+          className="header-credit"
+          onClick={handleGithubClick}
+          style={{ cursor: 'pointer' }}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => e.key === 'Enter' && handleGithubClick()}
+          aria-label="Visit Mjölnir GitHub repository"
+        >
+          <span className="credit-text">Mjölnir</span>
         </div>
       </div>
 

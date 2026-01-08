@@ -53,7 +53,7 @@ function ReportTab({ file, analysis, exifData, comparisonData }) {
     const custody = {
       caseID: `CASE-${Date.now()}-${Math.random().toString(36).substr(2, 5).toUpperCase()}`,
       fileName: file.name,
-      analyst: 'Mjolnir14',
+      analyst: 'Mjölnir',
       timestamp: new Date().toISOString(),
       actions: [
         {
@@ -166,7 +166,7 @@ function ReportTab({ file, analysis, exifData, comparisonData }) {
                 size: file.size,
                 hashes: analysis?.hashes,
                 timestamp: new Date().toISOString(),
-                analyst: 'Mjolnir14'
+                analyst: 'Mjölnir'
               };
               downloadFile(
                 JSON.stringify(evidence, null, 2),
@@ -257,7 +257,7 @@ function ReportTab({ file, analysis, exifData, comparisonData }) {
           </div>
           <div className="metadata-item">
             <span className="metadata-label">Analyst:</span>
-            <span className="metadata-value">Mjolnir14 🌗</span>
+            <span className="metadata-value">Mjölnir</span>
           </div>
           <div className="metadata-item">
             <span className="metadata-label">Timestamp:</span>

@@ -6,7 +6,7 @@ export function generateJSONReport(file, analysis, exifData, comparisonData) {
       generatedAt: new Date().toISOString(),
       generator: 'OmniMeta Forensic Analysis Tool',
       version: '1.0.0',
-      analyst: 'Mjolnir14'
+      analyst: 'Mjölnir'
     },
     fileInformation: {
       fileName: file.name,
@@ -289,7 +289,7 @@ export function generateHTMLReport(file, analysis, exifData) {
             </div>
             <div class="meta-item">
                 <span class="meta-label">Analyst:</span>
-                <span class="meta-value">Mjolnir14 🌗</span>
+                <span class="meta-value">Mjölnir</span>
             </div>
             <div class="meta-item">
                 <span class="meta-label">Tool Version:</span>
@@ -447,7 +447,7 @@ export function generateHTMLReport(file, analysis, exifData) {
         <div class="report-footer">
             <strong>OmniMeta - Professional Digital Forensics</strong>
             <div class="footer-credit">
-                Built by Mjolnir14 🌗<br>
+                Built by Mjölnir<br>
                 Deep Bitstream Analysis • Chain of Custody • Evidence Integrity
             </div>
         </div>
